@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA SOSIAL GUA</title>
+    <link rel="icon" type="image/jpeg" href="images/icon-image-social-media.jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-social-media.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Latar Belakang Grid Animasi -->
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <!-- Animated Shapes -->
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+  
+    <!-- Partikel Mengambang -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+                </svg>
+                <span class="logo-text">MEDIA SOSIAL GUA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About me</a></li>
+                <li><a href="#kontak" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-rotator">
+                <div class="text-set active">
+                    <h1 class="glitch-text" data-text="FUTURE IS NOW">JANGAN LUPA</h1>
+                    <p class="subtitle">↑</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="BEYOND LIMITS">FOLLOW Ya</h1>
+                    <p class="subtitle">Instagram whatsapp Facebook twitter=X</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="ELECTRIC DREAMS">TERIMA KASIH</h1>
+                    <p class="subtitle">👌🏻 👍🏻</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#features" class="cta-button cta-primary">klik disini atau scroll ke bawah</a>
+            <a href="#about" class="cta-button cta-secondary">tentang?</a>
+        </div>
+    </section>
+
+    <!-- Bagian Fitur dengan Tab -->
+    <section class="features" id="features">
+        <h2 class="section-core">Core</h2>
+        <h2 class="section-title">social media</h2>
+        <div class="features-container">
+            <div class="feature-tabs">   
+                <div class="tab-item active" data-tab="performance">
+                    <div class="marquee-container">
+                        <p class="marquee-text"> 👇🏻 </p>
+                    </div>
+                </div>
+                <a href="#conikon">
+                <div id="untukbawah" class="tab-item" data-tab="security">
+                      <div class="container-ig">
+                        <img src="images/icon-ig.png" class="ig-icon" alt="icon ig">
+                      </div>
+                    <span>Instagram</span>
+                </div>
+                </a>
+              <a href="#conikon">
+                <div class="tab-item" data-tab="network">
+                    <div class="container-wa">
+                        <img src="images/icon-wa.png" class="wa-icon" alt="icon wa">
+                      </div>
+                    <span>whatsapp</span>
+                </div>
+              </a>
+              <a href="#conikon">
+                <div class="tab-item" data-tab="analytics">
+                    <div class="container-fb">
+                        <img src="images/icon-fb.png" class="fb-icon" alt="icon fb">
+                      </div>
+                    <span>Facebook</span>
+                </div>
+              </a>
+              <a href="#conikon">
+                <div class="tab-item" data-tab="integration">
+                    <div class="container-x">
+                        <img src="images/icon-x.png" class="x-icon" alt="icon twitter=X">
+                      </div>
+                    <span>twitter=X</span>
+                </div>
+              </a>
+            </div>
+              <div class="feature-content" id="conikon">
+                <div class="content-panel active" id="performance">
+                   <h3>agar ada tampilan di box ini, klik ikon social media</h3>
+                </div>
+                  <div class="content-panel" id="security">
+                    <h3>INSTAGRAM</h3>
+                    <a href="https://www.instagram.com/rizkyweh17?igsh=dGV2eHYxanczYWd0">
+                     <div class="contautan-ig">
+                      <img src="images/icon-ig.png" class="ig-tautan" alt="icon link ig">
+                     </div>
+                   </a><p>Click here ↑</p>
+                </div>
+                  <div class="content-panel" id="network">
+                    <h3>whatsapp</h3>
+                    <a href="https://wa.me/6285603383994">
+                    <div class="contautan-wa">
+                      <img src="images/icon-wa.png" class="wa-tautan" alt="icon link wa">
+                    </div>
+                   </a><p>Click here ↑</p>
+                </div>
+                  <div class="content-panel" id="analytics">
+                    <h3>Facebook</h3>
+                   <a href="https://www.facebook.com/rizky.partii.3745">
+                     <div class="contautan-fb">
+                      <img src="images/icon-fb.png" class="fb-tautan" alt="icon link fb">
+                     </div>
+                   </a><p>Click here ↑</p>
+                </div>
+                  <div class="content-panel" id="integration">
+                    <h3>twitter=X</h3>
+                   <a href="https://x.com/mskuywe?t=8tVApnMJdEldUtMQugeaMQ&s=09">
+                    <div class="contautan-x">
+                     <img src="images/icon-x.png" class="x-tautan" alt="icon link twitter=X">
+                    </div>
+                  </a><p>Click here ↑</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+             <!-- Animasi Berputar -->
+             <div class="about-visual">
+                <div class="about-graphic"></div>
+                   <div class="wrapper">
+                      <img src="images/rotating-image.jpg" class="spin" alt="Gambar Berputar">
+                   </div>
+                </div>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="section-title">Tentang saya</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Halo! Saya Rizky fadilah.</p>
+                <p>Saya adalah seorang pengembang yang bersemangat, yang saat ini sedang dalam fase akselerasi untuk menjadi developer yang lebih kuat, lebih efisien, dan lebih strategis. Di sini, Anda akan melihat solusi front-end yang intuitif, cepat, dan berfokus pada pengalaman pengguna yang luar biasa, yang merupakan refleksi nyata dari upaya peningkatan keahlian saya setiap hari.</p>
+                <p>Saya percaya bahwa setiap bug adalah pelajaran berharga dan setiap baris kode yang ditulis adalah kesempatan untuk meningkatkan standar kualitas.</p>
+            </div>
+          </div>   
+        
+        <!-- Baris kedua dengan tata letak terbalik -->
+        <div class="about-content" style="margin-top: 80px;">
+            <div class="about-visual">
+                <div class="about-graphic-alt">
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                </div>
+            </div>     
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        
+            <div class="contact-info" id="kontak">
+                <h3>Connect With Us</h3>
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-details">
+                        <h4>Email</h4>
+                       <a href="mailto:rizkylah92@gmail.com">
+                         <p class="teks-email">Kirim Email ke Kami</p>
+                       </a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-details">
+                        <h4>Phone</h4>
+                      <a href="#untukbawah">
+                        <div class="congif">
+                          <img src="images/gif-petunjuk-atas.gif" class="gifikon">
+                        </div>
+                      </a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h4>Location</h4>
+                        <p>Bandung Indonesia</p>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <div id="map"></div>
+                        <div class="map-placeholder">     
+                   </div>
+                    <div class="map-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+            </div>
+            <p class="copyright">© 2025 media sosial gua. All rights reserved. Building tomorrow, today. | Design: <a href="https://templatemo.com" target="_blank" rel="nofollow noopener">TemplateMo</a> | modification by <a href="https://www.instagram.com/rizkyweh17?igsh=dGV2eHYxanczYWd0" target="_blank">Rizky Fadilah</p>
+        </div>
+    </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script-social-media.js"></script>
+</body>
+</html>
