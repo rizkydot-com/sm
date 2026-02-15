@@ -220,3 +220,13 @@ map.on('click', function(e) {
     .bindPopup("Lokasi baru:<br>Lat: " + lat + "<br>Lng: " + lng)
     .openPopup();
 });
+
+function triggerSatu(nomor) {
+    const el = document.getElementById('item' + nomor);
+    
+      el.classList.remove('aktif');
+    
+      void el.offsetWidth;
+    
+      el.classList.add('aktif');
+    }
